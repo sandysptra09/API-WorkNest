@@ -2,6 +2,9 @@
 const express = require('express')
 const router = express()
 
+// initialize user routes
+const user = require('../controllers/userController')
+
 router.get(`/api/worknest/`, (_req, res) => {
     try {
         res.status(200).json({
@@ -15,5 +18,6 @@ router.get(`/api/worknest/`, (_req, res) => {
         });
     }
 })
+
 
 module.exports = router

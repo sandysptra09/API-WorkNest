@@ -1,8 +1,8 @@
 'use strict'
 const express = require('express')
 
-
-const employe = require('../controllers/employeController')
+// define user routes
+const employe = require('../controllers/userController')
 const router = express.Router()
 
 // get all employees
